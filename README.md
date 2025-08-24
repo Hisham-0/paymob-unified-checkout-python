@@ -31,7 +31,9 @@ A Python project that demonstrates how to integrate with **Paymob’s Intention 
 
 - **Create Intention** → send request with amount, billing data, integration ID
 - **Client Secret** → returned in response
-- **Unified Checkout URL** → https://accept.paymob.com/unifiedcheckout/?publicKey=<YOUR_PUBLIC_KEY>&clientSecret=<CLIENT_SECRET>
+- **Unified Checkout URL**
+``` https://accept.paymob.com/unifiedcheckout/?publicKey=<YOUR_PUBLIC_KEY>&clientSecret=<CLIENT_SECRET>
+```
 - **Test Cards** (Sandbox):
 
 ```
@@ -78,7 +80,9 @@ A Python project that demonstrates how to integrate with **Paymob’s Intention 
    Extract `client_secret` from the JSON response.
 
 3. **Generate Checkout URL**  
-   Combine with `publicKey` → https://accept.paymob.com/unifiedcheckout/?publicKey=<YOUR_PUBLIC_KEY>&clientSecret=<CLIENT_SECRET>
+   Combine with `publicKey` 
+``` https://accept.paymob.com/unifiedcheckout/?publicKey=<YOUR_PUBLIC_KEY>&clientSecret=<CLIENT_SECRET>
+```
 
 4. **Open in Browser**  
    Script automatically launches the checkout page.
