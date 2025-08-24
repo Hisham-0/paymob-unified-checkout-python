@@ -20,15 +20,25 @@ A Python project that demonstrates how to integrate with **Paymob’s Intention 
 
 ---
 
+#### Postman Example
+
+![Postman Authorization](media/Authorization.png)  
+![Postman Response](media/Response.png)
+
+---
+
 ### 🔹 2. Payment Gateway (Paymob – Test Mode)
 
 - **Create Intention** → send request with amount, billing data, integration ID
 - **Client Secret** → returned in response
 - **Unified Checkout URL** → https://accept.paymob.com/unifiedcheckout/?publicKey=<YOUR_PUBLIC_KEY>&clientSecret=<CLIENT_SECRET>
 - **Test Cards** (Sandbox):
+
+```
   card: 2223 0000 0000 0007
   Expiry: 01/39
   CVV: 100
+```
 
 ---
 
@@ -47,14 +57,15 @@ A Python project that demonstrates how to integrate with **Paymob’s Intention 
 
 - **Language**: Python 3.9+
 - **Libraries**:
-- [requests](https://pypi.org/project/requests/) – HTTP requests
-- [python-dotenv](https://pypi.org/project/python-dotenv/) – environment variables
-- [webbrowser](https://docs.python.org/3/library/webbrowser.html) – auto open checkout page
+
+  - [requests](https://pypi.org/project/requests/) – HTTP requests
+  - [python-dotenv](https://pypi.org/project/python-dotenv/) – environment variables
+  - [webbrowser](https://docs.python.org/3/library/webbrowser.html) – auto open checkout page
 
 - **Files**:
-- `paymob_checkout.py` – main script
-- `.env` – holds Paymob credentials (not committed you need to add your keys in `.env.example` )
-- `.env.example` – example env file for setup
+  - `paymob_checkout.py` – main script
+  - `.env` – holds Paymob credentials (**not committed**)
+  - `.env.example` – example env file for setup
 
 ---
 
@@ -85,7 +96,7 @@ A Python project that demonstrates how to integrate with **Paymob’s Intention 
 1. Clone the repo:
 
 ```
-git clone https://github.com/yourusername/paymob-unified-checkout.git
+git clone https://github.com/Hisham-0/paymob-unified-checkout-python.git
 ```
 
 2. Install dependencies:
