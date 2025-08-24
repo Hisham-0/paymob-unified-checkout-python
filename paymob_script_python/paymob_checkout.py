@@ -16,7 +16,7 @@ notification_url = os.getenv("PAYMOB_NOTIFICATION_URL")
 url = "https://accept.paymob.com/v1/intention/"
 
 payload = {
-    "amount": 1000,  # in cents EGP * 100
+    "amount": 1000,  # in cents
     "currency": "EGP",
     "payment_methods": [integration_id],  # Integration ID from .env file
     "items": [
@@ -64,8 +64,13 @@ client_secret = data.get("client_secret")
 checkout_url = f"https://accept.paymob.com/unifiedcheckout/?publicKey={public_key}&clientSecret={client_secret}"
 
 print("HTTPS Status Codes: ", response.status_code)
-print(data)
-print("Client Secret:", client_secret)
+
+#### optional section 
+
+# print(data)
+# print("Client Secret:", client_secret)
+
+
 print("Checkout URL:", checkout_url)
 
 webbrowser.open(checkout_url)

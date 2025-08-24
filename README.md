@@ -112,3 +112,11 @@ pip install requests python-dotenv
 ```
 python paymob_checkout.py
 ```
+
+---
+
+## 🎥 Demo Video (Python Script)
+
+https://github.com/user-attachments/assets/758943f0-ff47-45b0-aa38-047a9a77878f
+
+---
