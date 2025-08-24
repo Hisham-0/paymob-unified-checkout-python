@@ -31,7 +31,12 @@ A Python project that demonstrates how to integrate with **Paymob’s Intention 
 
 - **Create Intention** → send request with amount, billing data, integration ID
 - **Client Secret** → returned in response
-- **Unified Checkout URL** → https://accept.paymob.com/unifiedcheckout/?publicKey=<YOUR_PUBLIC_KEY>&clientSecret=<CLIENT_SECRET>
+- **Unified Checkout URL**
+
+```
+ https://accept.paymob.com/unifiedcheckout/?publicKey=<YOUR_PUBLIC_KEY>&clientSecret=<CLIENT_SECRET>
+```
+
 - **Test Cards** (Sandbox):
 
 ```
@@ -78,9 +83,13 @@ A Python project that demonstrates how to integrate with **Paymob’s Intention 
    Extract `client_secret` from the JSON response.
 
 3. **Generate Checkout URL**  
-   Combine with `publicKey`  https://accept.paymob.com/unifiedcheckout/?publicKey=<YOUR_PUBLIC_KEY>&clientSecret=<CLIENT_SECRET>
+   Combine with `publicKey` in:
 
-4. **Open in Browser**  
+   ```
+   https://accept.paymob.com/unifiedcheckout/?publicKey=<YOUR_PUBLIC_KEY>&clientSecret=<CLIENT_SECRET>
+   ```
+
+4. **Open in Browser**
    Script automatically launches the checkout page.
 
 5. **Webhook + Redirection**
@@ -96,13 +105,17 @@ A Python project that demonstrates how to integrate with **Paymob’s Intention 
 1. Clone the repo:
 
 ```
+
 git clone https://github.com/Hisham-0/paymob-unified-checkout-python.git
+
 ```
 
 2. Install dependencies:
 
 ```
+
 pip install requests python-dotenv
+
 ```
 
 3. Copy .env.example → .env and fill with your Paymob credentials.
@@ -110,7 +123,9 @@ pip install requests python-dotenv
 4. Run the script:
 
 ```
+
 python paymob_checkout.py
+
 ```
 
 ---
@@ -120,3 +135,7 @@ python paymob_checkout.py
 https://github.com/user-attachments/assets/758943f0-ff47-45b0-aa38-047a9a77878f
 
 ---
+
+```
+
+```
