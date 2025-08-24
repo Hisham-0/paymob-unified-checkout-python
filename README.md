@@ -135,7 +135,3 @@ python paymob_checkout.py
 https://github.com/user-attachments/assets/758943f0-ff47-45b0-aa38-047a9a77878f
 
 ---
-
-```
-
-```
